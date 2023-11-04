@@ -1,0 +1,8 @@
+schema_version: 20180708
+name: hello-fromlambda
+version: 0.0.8
+runtime: python
+build_image: fnproject/python:3.9-dev
+run_image: fnproject/python:3.9
+entrypoint: /python/bin/fdk /function/lambda_function.py lambda_handler
+memory: 256
